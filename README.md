@@ -3,4 +3,13 @@ The Cloak of Invisibility is a magical artefact used to render the wearer invisi
 
 This invisibility cloak was the only known one that would not fade with age and would provide everlasting protection to the wearer, something no normal invisibility cloak could provide. As such, it was the only Hallow known to have been successfully passed down from generation to generation since Ignotus' time. In 1991, it passed to the possession of Harry Potter who used it to great success in the Second Wizarding War and resolved to pass it down to his own children.
 
-![alt invisibility-cloak](https://media.tenor.com/images/3ecb719a897f60c538ee53ad827019f9/tenor.gif)
+![alt invisibility-cloak](https://media.tenor.com/images/3ecb719a897f60c538ee53ad827019f9/tenor.gif )
+
+
+# How to use?
+- Install opencv2
+- Run main.py and click an image of the background using q button
+- Then run invisible_cloak.py and wear your ("blue colored") cloak and see the magic 
+
+
+
