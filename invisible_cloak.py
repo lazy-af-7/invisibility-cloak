@@ -18,11 +18,13 @@ while vid.isOpened():
         u_blue=np.array([130,255,255])
         mask=cv2.inRange(hsv, l_blue, u_blue)
         cv2.imshow("mask",mask)
-
+        kernel=np.ones((5,5),np.uint8)
         temp1=cv2.bitwise_and(back,back,mask=mask)
         mask=cv2.bitwise_not(mask)
         temp2=cv2.bitwise_and(frame,frame,mask=mask)
-        cv2.imshow('invisibility cloak',temp1+temp2)
+        final_image=temp1+temp2
+        final_image=cv2.morphologyEx(final_image,cv2.MORPH_CLOSE,kernel)
+        cv2.imshow('invisibility cloak',final_image)
         if cv2.waitKey(5) == ord('q'):
             break
 
